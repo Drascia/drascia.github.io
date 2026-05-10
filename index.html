@@ -29,8 +29,17 @@
     .resume-btn .material-icons { font-size: 18px; margin-right: 4px; }
     .resume-btn:hover, .resume-btn:focus { background-color: #1f3a5f !important; color: #fff !important; }
     .main-raised { padding-bottom: 60px !important; }
+    .hero-navy { background-color: #1f3a5f !important; min-height: 70vh; padding-top: 120px; padding-bottom: 80px; }
+    .hero-navy::before { display: none !important; }
+    .hero-avatar img { width: 140px; height: 140px; object-fit: cover; margin-bottom: 28px; }
+    .hero-name { color: #fff; margin-top: 0; }
+    .hero-subtitle { color: rgba(255,255,255,0.75); font-weight: 600; letter-spacing: 0.04em; margin-bottom: 24px; }
+    .hero-description { color: rgba(255,255,255,0.85); font-size: 16px; line-height: 1.6; max-width: 600px; margin: 0 auto; }
+    #earlier-projects .card-image { padding: 16px 16px 0; }
+    #earlier-projects .card-image img { border-radius: 6px; }
     @media (max-width: 575px) {
-      .profile .title { font-size: 2.5rem; }
+      .hero-name { font-size: 2.5rem; }
+      .hero-navy { padding-top: 100px; padding-bottom: 60px; min-height: 0; }
     }
     @media (max-width: 767px) {
       #earlier-projects .col-md-6 + .col-md-6 { margin-top: 30px; }
@@ -74,11 +83,16 @@
   
   
 <!-- 3.0 HEADER -->
-  <div class="page-header header-filter" data-parallax="true" style="background-image: url('./assets/img/fsae19-group-min.jpg');">
-    <div class='container'>
-      <div class='row'>
-        <div class='col-md-6'>
-
+  <div class="page-header hero-navy">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto text-center">
+          <div class="hero-avatar">
+            <img src="./assets/img/me_cropped.JPG" alt="Kıvanç Yıldız" class="img-raised rounded-circle img-fluid">
+          </div>
+          <h1 class="title hero-name">Kıvanç Yıldız</h1>
+          <h6 class="hero-subtitle">Staff Motor Mechanical Design Engineer<br>Heavy-rare-earth-free traction drives</h6>
+          <p class="hero-description">I design electric machines for production EV programs, with a current focus on eliminating heavy rare earth content from traction drives. Past launches at Tesla and Ford.</p>
         </div>
       </div>
     </div>
@@ -86,23 +100,7 @@
   <div class="main main-raised">
     <div class="profile-content">
       <div class="container">
-        <div class="row">
-          <div class="col-md-8 ml-auto mr-auto">
-            <div class="profile">
-              <div class="avatar">
-                <img src="./assets/img/me_cropped.JPG" alt="Circle Image" class="img-raised rounded-circle img-fluid">
-              </div>
-              <div class="name">
-                <h1 class="title">Kıvanç Yıldız</h1>
-                <h6 class="text-primary">Staff Motor Mechanical Design Engineer<br>Heavy-rare-earth-free traction drives</h6>
-              </div>
-              <div class="description text-center">
-                <p>I design electric machines for production EV programs, with a current focus on eliminating heavy rare earth content from traction drives. Past launches at Tesla and Ford.</p>
-              </div>
-            </div>
-          </div>
-        </div>		
-		
+
 <!-- 4.0 WORK EXPERIENCE -->
 
     <div class="section text-center" id='experience'>
@@ -192,6 +190,7 @@
             <div class="col-md-6 mb-3"><img class="w-100 rounded" src="./assets/img/real9.jpg" alt="Rolling chassis"><p class="text-center mt-1"><small>Rolling chassis</small></p></div>
             <div class="col-md-6 mb-3"><img class="w-100 rounded" src="./assets/img/real6.jpg" alt="No bodywork"><p class="text-center mt-1"><small>No bodywork</small></p></div>
             <div class="col-md-6 mb-3"><img class="w-100 rounded" src="./assets/img/fsae19-tilt-min (1).jpg" alt="Tilt test"><p class="text-center mt-1"><small>Tilt test</small></p></div>
+            <div class="col-md-6 mb-3"><img class="w-100 rounded" src="./assets/img/fsae19-group-min.jpg" alt="GGR19 team photo"><p class="text-center mt-1"><small>Team</small></p></div>
           </div>
         </div>
       </div>
